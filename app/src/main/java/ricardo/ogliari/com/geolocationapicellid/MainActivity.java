@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         CellIdService service = retrofit.create(CellIdService.class);
-        service.listRepos("{\n" +
+        service.geolocate("{\n" +
                 "  \"cellTowers\": [\n" +
                 "    {\n" +
                 "      \"cellId\": "+cid+",\n" +
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         CellIdService service = retrofit.create(CellIdService.class);
-        service.listRepos("{\n" +
+        service.geolocate("{\n" +
                 "  \"macAddress\": " + macAddress +
                 "}", "AIzaSyD-x8ItqL7UF3vqSMYChlRARwrXuyCqny0", new Callback<CellId>() {
 

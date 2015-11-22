@@ -12,6 +12,6 @@ import retrofit.http.Query;
 public interface CellIdService {
 
     @POST("/geolocation/v1/geolocate")
-    void listRepos(@Body String body, @Query("key") String key, Callback<CellId> callback);//Call<List<Repo>>
+    void geolocate(@Body String body, @Query("key") String key, Callback<CellId> callback);//Call<List<Repo>>
 
 }
